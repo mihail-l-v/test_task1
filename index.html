@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Изменение пароля</title>
+</head>
+<body>
+  <section class="popup">
+
+    <div class="popup__container">
+      <img src="img/logo.svg" alt="логотип">
+    </div>
+
+    <h1 class="popup__title">Изменение пароля</h1>
+
+    <form class="popup__form" action="#">
+      <div class="popup__form-wrapper">
+        <div class="popup__form-input">
+
+          <div class="popup__form-input-wrapper">
+            <input class="popup__input popup__input-login" type="text" name="user-name" placeholder="Email / Логин">
+            <div class="popup__warning">*</div>
+            <div class="popup__name-error"></div>
+          </div>
+
+          <div class="popup__form-input-wrapper">
+            <input class="popup__input popup__input-control" type="text" name="control" placeholder="Контрольная строка">
+            <div class="popup__warning">*</div>
+            <div class="popup__control-error"></div>
+          </div>
+
+          <div class="popup__form-input-wrapper">
+            <input class="popup__input popup__input-password" type="password" name="user-password" placeholder="Новый пароль">
+            <div class="popup__warning">*</div>
+            <div class="popup_eye">
+              <img src="img/eye-closed.svg" alt="показать пароль">
+            </div>
+            <div class="popup__password-error"></div>
+          </div>
+
+          <div class="popup__form-input-wrapper">
+            <input class="popup__input popup__input-password-again" type="password" name="user-password-again" placeholder="Подтверждение пароля">
+            <div class="popup__warning">*</div>
+            <div class="popup__password-again-error"></div>
+          </div>
+
+        </div>
+      </div>
+      <p class="popup__discript"> <span class="popup__warning-star">*</span> Обязательные поля</p>
+      <div class="popup__button">Изменить пароль</div>
+    </form>
+    <div class="popup__links">
+      <a class="popup__link" href="#">Зарегистироваться</a>
+      <div class="popup__link-wrapper">
+        <a class="popup__link" href="#">Войти</a>
+      </div>
+    </div>
+  </section>
+  <script src="./index.js"></script>
+</body>
+</html>
